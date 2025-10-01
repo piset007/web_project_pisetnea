@@ -1,0 +1,25 @@
+@import 'components/_varaible.scss';
+@import 'components/_about-course.scss';
+@import 'components/add-course';
+@import 'components/achieve';
+@import 'components/_contact.scss';
+@import 'components/_course.scss';
+@import 'components/_home.scss';
+@import 'components/_map.scss';
+@import 'components/_mentor.scss';
+@import 'components/_footer.scss';
+@import 'components/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
