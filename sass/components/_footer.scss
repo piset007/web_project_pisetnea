@@ -9,24 +9,84 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
 
-        .footer-content p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-    }
-
-    .social-links {
-        a {
-            color: white;
-            margin: 0 10px;
+        .footer-left {
             font-size: 18px;
-            transition: color 0.3s ease;
+            color: white;
         }
 
-        a:hover {
-            color: white;
+        .midle-footer {
+            border-right: white 2px solid;
+
+            ul {
+                padding-right: 10px;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+
+                li {
+                    a {
+                        color: white;
+                        transition: color 0.3s ease;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: #7209b7;
+                    }
+                }
+            }
+
+        }
+
+        .footer-right {
+            border-right: white 2px solid;
+
+            ul {
+                padding-right: 10px;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+
+                li {
+                    a {
+                        color: white;
+                        transition: color 0.3s ease;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: #7209b7;
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+
+                li {
+                    a {
+                        text-align: center;
+                        color: white;
+                        transition: color 0.3s ease;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: #7209b7;
+                    }
+                }
+            }
         }
     }
 }

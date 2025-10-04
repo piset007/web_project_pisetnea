@@ -3,42 +3,65 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .add-course-header {
-        text-align: center;
-        margin-bottom: 50px;
-        margin-top: 50px;
+        @include text-style;
 
-        h2 {
-            font-size: 36px;
-            color: #7209b7;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 16px;
-            color: black;
-        }
     }
 
     .add-course-list {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-left: 50px;
-        padding-right: 50px;
+        flex-direction: column;
+        width: 90%;
         gap: 50px;
 
         .add-course-iteam {
-            border: 0.01px rgba(20, 5, 5, 0.1) solid;
-            background: white;
-            border-radius: 24px;
-            box-shadow: 8px 10px rgba(20, 5, 5, 0.141);
-            width: 420px;
-            height: 350px;
+            flex: 1;
+            @include border-style;
             text-align: center;
             transition: transform 0.3s ease;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            justify-content: center;
+            align-items: center;
+
+            .add-course-img {
+                margin: 10px;
+                @include item-center;
+
+                img {
+
+                    width: 20%;
+                    height: 97%;
+                    border-radius: 60px;
+                    object-fit: cover;
+                }
+            }
+
+            .add-course-desc {
+                p {
+                    font-size: 16px;
+                    color: #777;
+                }
+            }
+
+            .add-course-icons {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                border-radius: 24px;
+
+                i {
+                    border-radius: 30px;
+                    margin: 10px;
+                    padding: 10px;
+                    background-color: #777;
+                    font-size: 24px;
+                    color: #fff;
+                }
+
+            }
         }
 
         .add-course-iteam:hover {

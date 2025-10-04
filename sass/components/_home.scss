@@ -1,56 +1,68 @@
-.home {
-    width: 100%;
-    height: 80px;
-    background-color: white;
+.header {
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.947) ;
     position: fixed;
-    top: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.177);
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .header {
-        padding: 20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .logo {
+        display: flex;
         align-items: center;
+        gap: 20px;
+         color: #6b1f6d;
+        img {
+            width: 80px;
+            border-radius: 40px;
+            box-shadow: 0 4px 8px rgba(110, 14, 143, 0.3) ;
+        }
+    }
 
-        .nav {
-            width: 100%;
-            height: 100%;
+    .nav {
 
-            ul {
-                list-style: none;
-                display: flex;
-                justify-content: space-around;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
 
-                li {
-                    a {
-                        font-size: 18px;
-                        text-decoration: none;
-                        position: relative;
-                        background: linear-gradient(120deg, #ff00cc 0%, #333399 100%);
-                        background-repeat: no-repeat;
-                        background-size: 100% 0.1em;
-                        background-position: 0 100%;
-                        transition: background-size 0.01s ease-in;
-                    }
-
-                    a:hover {
-                        background-size: 100% 100%;
-                    }
-
+            li {
+                a {
+                    padding: 10px 15px;
+                    font-size: 18px;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    position: relative;
+                    background: linear-gradient(120deg, #ff00cc 0%, #333399 100%);
+                    background-repeat: no-repeat;
+                    background-size: 100% 0.02em;
+                    background-position: 0 100%;
+                    transition: background-size 0.01s ease-in;
                 }
+
+                a:hover {
+                    background-size: 100% 100%;
+                    color: white;
+                }
+
             }
         }
     }
 }
+
 
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    height: 88vh;
+    height: 100vh;
     text-align: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://techbrainism.com/wp-content/uploads/2021/05/online-course-main-800x549-1.png);
     background-size: cover;
@@ -62,6 +74,9 @@
         h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
+            span{
+                 color:rgb(83.71875, 6.609375, 134.390625);
+            }
         }
 
         p {

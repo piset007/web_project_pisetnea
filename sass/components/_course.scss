@@ -7,20 +7,7 @@
   align-items: center;
 
   .course-header {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-
-    h2 {
-      font-size: 36px;
-      color: #7209b7;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 16px;
-      color: black;
-    }
+    @include text-style;
   }
 
   .course-list {
@@ -31,10 +18,7 @@
     gap: 50px;
 
     .course-item {
-      border: 0.01px rgba(20, 5, 5, 0.1) solid;
-      background: white;
-      border-radius: 24px;
-      box-shadow: 8px 10px rgba(20, 5, 5, 0.141);
+      @include border-style;
       width: 648px;
       height: 350px;
       text-align: center;
@@ -53,8 +37,8 @@
         .item-info-top {
           h3 {
             font-size: 24px;
-            color: #333;
-            margin-bottom: 10px;
+            color:rgb(83.71875, 6.609375, 134.390625);
+            margin-bottom: 50px;
           }
 
           p {
