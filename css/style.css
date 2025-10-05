@@ -985,7 +985,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding: 0px 20px 20px 20px;
+    justify-content: center;
+    padding: 0px 40px 40px 40px;
     gap: 40px;
   }
   .mentor .mentor-list .mentor-item {
@@ -993,7 +994,7 @@
     background: white;
     border-radius: 24px;
     box-shadow: 8px 10px rgba(20, 5, 5, 0.219);
-    width: 378px;
+    width: 380px;
     height: 360px;
     text-align: center;
     padding: 40px;

@@ -178,12 +178,13 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
-            padding: 0px 20px 20px 20px;
+            justify-content: center;
+            padding: 0px 40px 40px 40px;
             gap: 40px;
 
             .mentor-item {
                 @include border-style;
-                width: 378px;
+                width: 380px;
                 height: 360px;
                 text-align: center;
                 padding: 40px;
