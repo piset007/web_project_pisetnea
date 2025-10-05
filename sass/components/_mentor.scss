@@ -1,7 +1,7 @@
 .mentor {
-    padding: 100px 0;
+    width: 100%;
+    height: auto;
     background: #f9f9f9;
-    margin-top: 100px;
 
     .mentor-header {
         @include text-style;
@@ -9,17 +9,15 @@
     }
 
     .mentor-list {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-left: 50px;
-        padding-right: 50px;
-        gap: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 80px;
+        gap: 80px;
 
         .mentor-item {
             @include border-style;
-            width: 420px;
+            width: 400px;
             height: 350px;
             text-align: center;
             padding: 40px;
@@ -119,6 +117,90 @@
 
         .mentor-item:hover {
             transform: translateY(-10px);
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mentor {
+        width: 100%;
+        height: auto;
+        background: #f9f9f9;
+
+        .mentor-header {
+            @include text-style;
+
+        }
+
+        .mentor-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 0px 80px 80px 80px;
+            gap: 40px;
+
+            .mentor-item {
+                @include border-style;
+                width: 320px;
+                height: 360px;
+                text-align: center;
+                padding: 40px;
+                transition: transform 0.3s ease;
+
+                h3 {
+                    font-size: 20px;
+                    color: #333;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #777;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+ .mentor {
+        width: 100%;
+        height: auto;
+        background: #f9f9f9;
+
+        .mentor-header {
+            @include text-style;
+
+        }
+
+        .mentor-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            padding: 0px 20px 20px 20px;
+            gap: 40px;
+
+            .mentor-item {
+                @include border-style;
+                width: 378px;
+                height: 360px;
+                text-align: center;
+                padding: 40px;
+                transition: transform 0.3s ease;
+
+                h3 {
+                    font-size: 20px;
+                    color: #333;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #777;
+                    margin-bottom: 5px;
+                }
+            }
         }
     }
 }

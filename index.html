@@ -27,6 +27,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </section>
     <section class="hero" id="hero">
         <div class="hero-content">
@@ -291,7 +297,7 @@
             <p>Meet the experts who will guide you through your learning journey.</p>
         </div>
         <div class="mentor-list">
-            <div class="mentor-item">
+            <div class="mentor-item mentor1">
                 <div class="menter-top">
                     <div class="top-img">
                         <img src="https://miro.medium.com/v2/resize:fit:1400/1*C9WxWG99CARZ5sp68WTMoQ.png" alt="">
@@ -313,7 +319,7 @@
                     <button class="btn">Contact Me</button>
                 </div>
             </div>
-            <div class="mentor-item">
+            <div class="mentor-item mentor2">
                 <div class="menter-top">
                     <div class="top-img">
                         <img src="https://www.seasonmoorephotography.com/wp-content/uploads/2022/07/2022-07-03_0038-1024x734.jpg"
@@ -336,7 +342,7 @@
                     <button class="btn">Contact Me</button>
                 </div>
             </div>
-            <div class="mentor-item">
+            <div class="mentor-item mentor3">
                 <div class="menter-top">
                     <div class="top-img">
                         <img src="https://png.pngtree.com/thumb_back/fh260/background/20240702/pngtree-updating-her-professional-business-profile-image_15843406.jpg"
@@ -359,7 +365,7 @@
                     <button class="btn">Contact Me</button>
                 </div>
             </div>
-            <div class="mentor-item">
+            <div class="mentor-item mentor4">
                 <div class="menter-top">
                     <div class="top-img">
                         <img src="https://blog-pixomatic.s3.appcnt.com/image/22/01/26/61f166e1377d4/_orig/pixomatic_1572877223091.png"
@@ -382,7 +388,7 @@
                     <button class="btn">Contact Me</button>
                 </div>
             </div>
-            <div class="mentor-item">
+            <div class="mentor-item mentor5">
                 <div class="menter-top">
                     <div class="top-img">
                         <img src="https://t3.ftcdn.net/jpg/06/11/89/50/360_F_611895025_3sEm547mzOF1IKMBAVa4fJ7Ifq4z8Eye.jpg"
@@ -405,7 +411,7 @@
                     <button class="btn">Contact Me</button>
                 </div>
             </div>
-            <div class="mentor-item">
+            <div class="mentor-item mentor6">
                 <div class="menter-top">
                     <div class="top-img">
                         <img src="https://atd-bloges.s3.us-east-2.amazonaws.com/wp-content/uploads/2022/04/16142821/cool-profile-pictures-for-girls-9.webp"
@@ -485,6 +491,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        menuToggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                nav.classList.toggle('active');
+            }
+        });
+
+        // Close menu when any link clicked (important for mobile)
+        document.querySelectorAll('.nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

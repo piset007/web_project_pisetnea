@@ -90,3 +90,57 @@
         }
     }
 }
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer {
+        padding: 40px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer-right {
+            display: none;
+        }
+
+        .midle-footer {
+            display: none;
+        }
+
+        .social-media {
+            padding-right: 20px;
+            padding-right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .footer {
+        padding: 20px;
+        margin-top: 100px;
+
+        .footer-right {
+            display: none;
+        }
+
+        .midle-footer {
+            display: none;
+        }
+
+        .footer-left {
+            display: none;
+        }
+
+        .social-media {
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
